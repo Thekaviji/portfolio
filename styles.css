@@ -1,0 +1,207 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1117;
+    margin: 0;
+    padding: 0;
+    color: #c9d1d9;
+    overflow-x: hidden;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    background-color: #161b22;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-text {
+    max-width: 600px;
+    color: #c9d1d9;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #a5b3b8;
+    margin-bottom: 30px;
+}
+
+.skills-list, .projects-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li, .projects-list li {
+    margin: 15px 0;
+    color: #a5b3b8;
+}
+
+.neon {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: #58a6ff;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #a5b3b8;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161b22;
+    position: relative;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.hero-text {
+    color: #c9d1d9;
+    max-width: 600px;
+}
+
+.greeting {
+    font-size: 1.2rem;
+    color: #58a6ff;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #58a6ff;
+}
+
+.highlight {
+    color: #ff007f;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #a5b3b8;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #58a6ff;
+    color: #161b22;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #007acc;
+}
+
+.illustration {
+    max-width: 500px;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Image Sizes (Alternating Sizes for Sections) */
+
+/* About Section - Smaller Image */
+.about-image .section-illustration {
+    width: 250px;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Skills Section - Medium Image */
+.skills-image .section-illustration {
+    width: 350px;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Certifications Section */
+.certifications-section {
+    padding: 80px 20px;
+    background-color: #161b22;
+}
+
+.certifications-list {
+    list-style: none;
+    padding-left: 0;
+    color: #a5b3b8;
+}
+
+.certifications-list li {
+    margin: 15px 0;
+}
+
+.certification-title {
+    font-size: 1.5rem;
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+.certification-details {
+    font-size: 1.1rem;
+    color: #a5b3b8;
+    margin-top: 5px;
+}
+
+/* Projects Section - Larger Image */
+.projects-image .section-illustration {
+    width: 450px;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Contact Section - Medium Image */
+.contact-image .section-illustration {
+    width: 350px;
+    height: auto;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Reverse Flex Direction for Alternating Image Sides */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Keyframe Animation for Floating Effect */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
